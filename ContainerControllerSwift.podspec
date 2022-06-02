@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
   # s.social_media_url      = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version          = "5.0"
   
-  # s.ios.deployment_target   = '13.0'
-  s.platform                = :ios, "13.0"
+  # s.ios.deployment_target   = '12.0'
+  s.platform                = :ios, "12.0"
 
   s.source_files            = 'Sources/**/*.{swift}'
 

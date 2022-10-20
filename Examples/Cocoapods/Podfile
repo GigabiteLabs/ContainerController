@@ -1,0 +1,17 @@
+# Min target
+platform :ios, '13.0'
+
+# Pod install settings
+use_modular_headers!
+use_frameworks!
+
+target 'ContainerControllerSwift_Example' do
+  # define relative path to root where podspec lives
+  pod 'ContainerController', :path => '../../'
+  
+# disable until we have tests
+#  target 'ContainerControllerSwift_Tests' do
+#    inherit! :search_paths
+#
+#  end
+end

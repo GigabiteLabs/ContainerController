@@ -1,0 +1,16 @@
+PODS:
+  - ContainerController (2.0.0)
+
+DEPENDENCIES:
+  - ContainerController (from `../../`)
+
+EXTERNAL SOURCES:
+  ContainerController:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  ContainerController: f4aa108440ce8e4166e18eac91e331cf0d975ef8
+
+PODFILE CHECKSUM: 7cc237e445adb6858d69cdbb0dd04920aebcb64e
+
+COCOAPODS: 1.11.2

@@ -75,7 +75,7 @@ Follow [this doc](https://developer.apple.com/documentation/swift_packages/addin
 ```swift
 
 import UIKit
-import ContainerControllerSwift
+import ContainerController
 
 class ViewController: UIViewController, ContainerControllerDelegate {
     

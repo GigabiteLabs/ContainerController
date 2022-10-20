@@ -1,0 +1,6 @@
+framework module ContainerController {
+  umbrella header "ContainerController-umbrella.h"
+
+  export *
+  module * { export * }
+}

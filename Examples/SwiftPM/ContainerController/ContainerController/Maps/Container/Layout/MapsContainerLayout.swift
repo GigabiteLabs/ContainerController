@@ -19,7 +19,7 @@ class MapsContainerLayout: ContainerLayout {
         setBackgroundShadow()
         
         setIPadInsets()
-        
+
         setLandscapePositions()
         setLandscapeInsets()
     }
@@ -34,9 +34,9 @@ class MapsContainerLayout: ContainerLayout {
         
         if ContainerDevice.isIpad {
             
-            let width: CGFloat = 320
+            let width: CGFloat = 500
             
-            let left: CGFloat = 8
+            let left: CGFloat = 50
             let right: CGFloat = (ContainerDevice.screenMin - width)
             
             insets = ContainerInsets(right: right, left: left)
@@ -57,9 +57,9 @@ class MapsContainerLayout: ContainerLayout {
     
     private func setLandscapeInsets() {
         
-        let width: CGFloat = ContainerDevice.isIphoneX ? 320 : 290
+        let width: CGFloat = ContainerDevice.isIphoneX ? 320 : 500
         
-        let left: CGFloat = (ContainerDevice.isIphoneX ? 44 : 8)
+        let left: CGFloat = (ContainerDevice.isIphoneX ? 44 : 50)
         let right: CGFloat = (ContainerDevice.screenMax - width)
         
         landscapeInsets = ContainerInsets(right: right, left: left)

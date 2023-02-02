@@ -21,8 +21,5 @@ class ExampleHeaderGripView: XibView {
     override func loadedFromNib() {
         separatorHeight?.constant = 0.5
         separatorView?.alpha = 0.0
-        
-        
     }
-    
 }

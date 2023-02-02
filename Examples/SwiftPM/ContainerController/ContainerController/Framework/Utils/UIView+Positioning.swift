@@ -166,25 +166,7 @@ public extension UIView {
             }
         get { return self.bounds.size.height }
     }
-
-    // MARK: - Useful Methods
-
-    /// Center view to it's parent view.
-//    func centerToParent() {
-//        guard let superview = self.superview else { return }
-//
-//        switch UIApplication.shared.statusBarOrientation {
-//            case .landscapeLeft, .landscapeRight:
-//                self.origin = CGPoint(x: (superview.height / 2) - (self.width / 2),
-//                                      y: (superview.width / 2) - (self.height / 2))
-//            case .portrait, .portraitUpsideDown:
-//                self.origin = CGPoint(x: (superview.width / 2) - (self.width / 2),
-//                                      y: (superview.height / 2) - (self.height / 2))
-//            case .unknown:
-//                return
-//            }
-//    }
-
+    
     // MARK: - Private Methods
     fileprivate func _pixelIntegral(_ pointValue: CGFloat) -> CGFloat {
         let scale = UIScreen.main.scale

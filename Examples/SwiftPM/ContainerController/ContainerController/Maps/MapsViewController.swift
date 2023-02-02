@@ -14,42 +14,30 @@ import ContainerController
 class MapsViewController: StoryboardController, MapsContainerControllerDelegate, LocationContainerControllerDelegate, RouteContainerControllerDelegate, MenuContainerControllerDelegate {
     
     // MARK: - IBOutlets
-    
     @IBOutlet weak var mapView: MKMapView!
-    
     @IBOutlet weak var mapWeatherView: MapsWeatherView!
-    
     @IBOutlet weak var mapButtons: MapsButtons!
     @IBOutlet weak var mapButtonsPaddingTop: NSLayoutConstraint!
     @IBOutlet weak var mapButtonsPaddingRight: NSLayoutConstraint!
-    
     @IBOutlet weak var statusBlur: UIVisualEffectView!
     @IBOutlet weak var statusBarBlurHeight: NSLayoutConstraint!
     
     // MARK: - Properties
-    
     var mapManager: MapViewManager!
-    
     var mapsContainer: MapsContainerController!
     var locationContainer: LocationContainerController?
     var routeContainer: RouteContainerController?
     var menuContainer: MenuContainerController!
-    
     var darkStyle: Bool = false
     var selectedIndex: Int = 0
     var showOnce: Bool = false
     
     // MARK: - Life Cycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
-        
         updateMapManager()
-        
         showMapsContainer()
-        
         updateMapViewButtons()
         updateMapViewWeatherView()
         updateMapViewTopPadding()
@@ -60,7 +48,6 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         super.viewWillAppear(animated)
         
         setNeedsStatusBarAppearanceUpdate()
-        
         navBar(hide: true)
         if !showOnce {
             mapsContainer.move(type: .hide, animation: false)

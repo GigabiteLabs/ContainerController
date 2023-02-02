@@ -14,13 +14,10 @@ class MapsContainerController: ContainerController, ContainerControllerDelegate 
     // MARK: - Properties
     
     var mapsDelegate: MapsContainerControllerDelegate?
-    
     var tableView: TableAdapterView!
     var items: [TableAdapterItem] = []
-    
     var darkStyle: Bool = false
     var searchSelected: Bool = false
-    
     var headerSearchBarView: HeaderSearchBarView!
     
     // MARK: - Init
@@ -30,7 +27,6 @@ class MapsContainerController: ContainerController, ContainerControllerDelegate 
                    layout: MapsMainContainerLayout())
         
         self.darkStyle = darkStyle
-        
         self.delegate = self
         
         loadItems()

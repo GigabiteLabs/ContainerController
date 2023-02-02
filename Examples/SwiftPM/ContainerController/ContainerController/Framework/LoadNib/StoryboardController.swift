@@ -20,12 +20,6 @@ class StoryboardController: UIViewController {
         
         let storyboard = UIStoryboard.init(name: className, bundle: nil)
         
-//        if let initialViewController = storyboard.instantiateInitialViewController() {
-//            return initialViewController
-//        } else {
-//            fatalError("Can't initialize view controller \(self)")
-//        }
-        
         return storyboard.instantiateViewController(withIdentifier: className)
     }
 }
